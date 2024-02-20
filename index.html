@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Dhaval Savalia - Software Engineer</title>
+		<style type="text/css">
+			html,
+			body {
+				margin: 0;
+				min-height: 100vh;
+				width: 100%;
+				background: #282828;
+			}
+			#json-display {
+				border: 1px solid #000;
+				margin: 0;
+				padding: 10px 20px;
+				white-space: initial;
+			}
+		</style>
+		<link rel="icon" href="./favicon.png" type="image/png" sizes="16x16" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+		<script
+			type="text/javascript"
+			src="./src/jquery.json-viewer.js"
+		></script>
+		<link rel="stylesheet" href="./src/jquery.json-viewer.css" />
+		<pre id="json-display" class="json-editor-blackbord"></pre>
+
+		<script type="text/javascript">
+			var data = {
+				name: "Dhaval Jagdishbhai Savalia",
+				email: "hello@dhavalsavalia.com",
+				github: "https://github.com/dhavalsavalia",
+				linkedIn: "https://linkedin.com/in/dhavalsavalia",
+				website: "https://dhavalsavalia.com",
+				blog: "https://medium.com/@dhavalsavalia",
+				aboutMe:
+					"Hi, my name is Dhaval. I am a flight simulator player and aviation-geek. Occasionally, you will find me playing either my guitar or upright piano. On technical side, I am passionate about full-stack web development.",
+				experience: [
+					{
+						company: "GardaWorld",
+						role: "Full Stack Develoepr",
+						location: "Toronto, ON, Canada",
+						startDate: "March-2023",
+						endDate: "Present",
+						summary: [
+							"Developed Employee and Resource Scheduling Solution: Utilized Pandas and NumPy for data manipulation, incorporating pylintand Ruff for code quality. Designed and normalized an extensive database independently.",
+							"Agile and Scrum Advocacy: Championed Agile/Scrum methodologies, employing Jira for project management and Confluence for documenting software designs and team practices, facilitating rapid team onboarding.",
+							"Tech Stack: Spearheaded the integration of FastAPI, SQLAlchemy, PostgreSQL, Alembic, and NextJS for end-to-end application development. Pioneered an extensive FastAPI template with dependency injection, significantly reducing development cycle time and boosting team productivity.",
+							"Authentication and Authorization: Integrated Microsoft Azure AD authentication with OAuth 2.0 and Okta verification flow on full-stack application with RBAC (Role-Based Access Control) system.",
+							"CI/CD and Cloud Deployment: Led the development of production pipelines using GitFlow in BitBucket and Jenkins for Docker container management, emphasizing code quality through Ruff and ESLint integration. Responsible for code review, validation, and approving pull requests.",
+							"Efficiency Transformation: Transformed a week-long manual scheduling process into a 5-minute automated operation, dramatically enhancing operational efficiency.",
+							"Moving from VSCode to JetBrains PyCharm: This involved proving the money investment would be sound, writing new documentation, teach how to efficient using the new program to the team.",
+							"Communication: Fostered direct collaboration with Subject Matter Experts (SMEs) to expedite product delivery, ensuring rapid deployment to market.",
+						],
+					},
+					{
+						company: "TRIYO",
+						role: "Full Stack Developer",
+						location: "Toronto, ON, Canada",
+						startDate: "November-2022",
+						endDate: "January-2023",
+						summary: [
+							"Enhanced Client Decision-Making: Developed a collaboration software enhancing client operations with real-time data access, streamlining decision-making processes.",
+							"Modernized Development Stack: Leveraged C# ASP.NET Core, React.js with TypeScript, Sass, and Microsoft SQL to build responsive application.",
+							"Office Efficiency Tools: Created Microsoft Office Add-ins, improving productivity across Word, PowerPoint, Excel, and Outlook.",
+							"UI/UX Implementation: Translated Figma designs into intuitive front-end components, ensuring alignment with user experience goals.",
+							"Data Visualization for Finance: Built comprehensive dashboards for financial institutions, enabling detailed data analysis and insights.",
+							"Quality Assurance: Ensured high code quality and functionality through extensive unit testing with XUnit and Jest.",
+							"Automation of Routine Tasks: Implemented CRON jobs via Hangfire, automating essential operations to enhance system reliability.",
+						],
+					},
+					{
+						company: "Planned Career Break",
+						role: "Professional Development",
+						location: "Education and Relocation",
+						startDate: "November-2021",
+						endDate: "November-2022",
+						summary: [
+							"Planned career break to pursue Masters in Computer Engineering at the University of Windsor.",
+							"Moved from India to Canada, settling into new country.",
+						],
+					},
+					{
+						company: "TSS Consultancy Pvt Ltd",
+						role: "Junior Software Engineer",
+						location: "Mumbai, India",
+						startDate: "December-2020",
+						endDate: "November-2021",
+						summary: [
+							"Full-Stack Development: Implemented solutions using C# ASP.NET MVC, AngularJS, and Microsoft SQL Server, adhering to SOLID principles and dependency injection, enhancing application integrity and maintainability.",
+							"Agile Excellence: Achieved 95% on-time delivery of sprint stories with zero carry-over, utilizing JIRA for efficient issue tracking and sprint management.",
+							"Deployment Efficiency: Created a Python-based SQL deployment tool, reducing deployment times by over 50% and significantly improving operational workflows.",
+							"QA Productivity Tool: Developed an internal FastAPI-React web application, saving QA teams 2 hours weekly by providing real-time Azure DevOps pipeline statuses.",
+							"Fraud Detection: Authored MS SQL stored procedures for detecting fraudulent transactions and alerting financial partners, bolstering security measures.",
+							"Knowledge Sharing: Conducted a comprehensive 2-day SQL training for QA, enhancing team skill sets and understanding of data structures.",
+							"Mentorship: Guided 3 junior engineers on C#, AngularJS, SQL, and Agile practices, fostering team growth and knowledge expansion.",
+							"CI/CD Implementation: Established and managed GitHub Actions and Jenkins for CI/CD, streamlining code deployment and integration processes.",
+							"API Design: Revised and updated OpenAPI specifications for microservices, ensuring clear and accurate API documentation.",
+							"Quality Assurance: Maintained a minimum of 80% test coverage, guaranteeing high code quality and reliability.",
+						],
+					},
+				],
+				education: [
+					{
+						college: "University of Windsor, Ontario, Canada",
+						studyType:
+							"Master of Engineering in Computer Engineering",
+						expectedGraduation: "2023",
+					},
+					{
+						college: "Gujarat Technological University, India",
+						studyType:
+							"Bachelor of Engineering in Computer Engineering",
+						passingYear: "2021",
+					},
+				],
+				projects: [
+					{
+						name: "Plinx",
+						summary:
+							"Plinx is an experimental, minimalistic, and extensible web framework based on WebOb and WSGI similar to Flask and FastAPI, and an ORM written in Python.",
+						link: "https://github.com/dhavalsavalia/Plinx",
+					},
+				],
+				involvements: [
+					{
+						organization: "Government Engineering College, Rajkot",
+						club: "Google Developer Student Club",
+						position: "Core Team Member",
+						startDate: "September-2020",
+						endDate: "May-2021",
+						summary: [
+							"Served as a core team member at Google DSC which involved contacting speakers to different events.",
+							"Hosting platform on various technologies and soft skills for students.",
+							"Gave a 2-hour long webinar on 'Everything about Git and GitHub'.",
+						],
+					},
+					{
+						organization: "Government Engineering College, Rajkot",
+						club: "Student Inclination Club",
+						position: "Volunteer and Instructor",
+						startDate: "October-2017",
+						endDate: "June-2021",
+						summary: [
+							"Volunteered as club member which managed meetups and workshops.",
+							"Served as Python language instructor and programming on-boarding instructor and trained over 140 students.",
+							"Looked after day-to-day activities such as problem solving.",
+						],
+					},
+					{
+						organization: "PyCon India",
+						position: "Volunteer",
+						date: "October-2018",
+						summary: [
+							"Helped fixing bugs at PyCon website and blog.",
+							"See my bug fixes at https://github.com/pythonindia/inpycon2018/commits?author=dhavalsavalia and https://github.com/pythonindia/inpycon-blog/commits?author=dhavalsavalia",
+						],
+					},
+				],
+				skills: {
+					technology: [
+						"Python (Django, FastAPI, Flask and testing)",
+						"C# (ASP dotNET)",
+						"JavaScript (Node.js, AngularJS, Angular, React)",
+						"SQL (MS SQL, MySQL, Oracle and PostgreSQL)",
+						"Docker",
+						"AWS",
+						"Linux (Ubuntu, CentOS, RHEL, Debian)",
+						"Git (GitHub, GitLab)",
+						"XML/HTML",
+						"JSON",
+						"CSS",
+					],
+					softwareDevelopment: [
+						"Agile/Scrum",
+						"JIRA",
+						"DevOps",
+						"Software Architecture",
+						"System Design",
+						"REST API",
+						"IDEs (PyCharm, Visual Studio, Visual Studio Code, vim)",
+					],
+					misc: [
+						"Version Control System",
+						"System Administration",
+						"Microservices",
+						"Unix-Linux Systems",
+					],
+				},
+			};
+
+			$("#json-display").jsonViewer(data, {
+				collapsed: false,
+				rootCollapsable: false,
+				withQuotes: false,
+				withLinks: true,
+			});
+		</script>
+	</body>
+</html>
